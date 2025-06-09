@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+ <!--questo è un comento -->   
+    <meta charset="UTF-8">
+    <!--tipologio di simbili alfanumerici-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Indica al browser di scalare i contenuti in base alle 
+    dimensioni dello schermo-->
+    <title>Document</title>
+    <!--titolo sulla scheda del browser e sui motori di ricerca (non andate 
+    olre 70 caratteri)-->
+    <meta name 
+</head>
+<body>
+    
+</body>
+</html>
