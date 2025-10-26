@@ -21,9 +21,9 @@ return calcolo_ipotenusa;
 
 
 function perimetro(){
- var calcolo_ipotenusa = ipotenusa (catetoA, catetoB);
+ var lunghezza_ipotenusa = ipotenusa();
   
-var calcolo_perimetro = catetoA + catetoB + calcolo_ipotenusa;
+var calcolo_perimetro = catetoA + catetoB + lunghezza_ipotenusa;
 //la funzione restituera il perimetro del triangolo rettangolo con catetoA + catetoB + ipotenusa 
 return calcolo_perimetro;
 }
