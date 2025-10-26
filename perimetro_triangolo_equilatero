@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcolo del perimetro del triangolo equilatero</title>
+</head>
+<body>
+    <h1>il perimetro del triangolo equilatero di cui hai inserito i dati di misura</h1>
+<script>
+//dichiarazione di una variabile e assegnazione del valore
+var lato = Number(prompt("inserici la lunghezza del lato del triangolo equilatero",""));
+//la variabile lato restituisce un testo(stringa) ma usando
+// la funzione
+function perimetro_triangolo(){
+var calcolo_perimetro = lato + lato + lato;
+//la funzione retuituera lato multiplicato per lato
+return calcolo_perimetro;
+}
+//output
+document.write( "il perimetro del triangolo equilatero è:" + perimetro_triangolo() + " cm" );
+
+</script>
+
+</body>
+</html>
