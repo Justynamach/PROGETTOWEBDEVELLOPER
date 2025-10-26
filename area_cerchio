@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcolo dell area del cerchio</title>
+</head>
+<body>
+    <h1>l area del cerchio di cui hai inserito i dati di misura</h1>
+<script>
+//dichiarazione di una variabile e assegnazione del valore
+var raggio = Number(prompt("inserici la lunghezza del raggio del cerchio",""));
+//la variabile lato restituisce un testo(stringa) ma usando
+// la funzione
+function area(){
+var calcolo_area = 3.1416 * raggio * raggio;
+//la funzione restituira l area moltiplicando  pi greco per raggio per raggio
+return calcolo_area;
+}
+//output
+document.write( "l area del cerchio è:" + area() + " cm" );
+
+</script>
+
+</body>
+</html>
