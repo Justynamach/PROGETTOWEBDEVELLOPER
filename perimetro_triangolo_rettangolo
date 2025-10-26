@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcolo del perimetro del triangolo rettangolo</title>
+</head>
+<body>
+    <h1>il perimetro del triangolo rettangolo di cui hai inserito i dati di misura</h1>
+<script>
+//dichiarazione delle  variabili catetoA e catetoB 
+var catetoA = Number(prompt("inserici la lunghezza del primo cateto",""));
+var catetoB = Number(prompt("inserici la lunghezza del secondo cateto",""));
+//le variabili catetoA e catetoB restituiscono un testo(stringa) ma usando
+// la funzione
+function ipotenusa(){
+var calcolo_ipotenusa = (catetoA * catetoA + catetoB * catetoB) **0.5;
+//la funzione restituera radice quadrata del catetoA per catetoA piu catetoB per catetoB 
+return calcolo_ipotenusa;
+}
+
+
+function perimetro(){
+ var calcolo_ipotenusa = ipotenusa (catetoA, catetoB);
+  
+var calcolo_perimetro = catetoA + catetoB + calcolo_ipotenusa;
+//la funzione restituera il perimetro del triangolo rettangolo con catetoA + catetoB + ipotenusa 
+return calcolo_perimetro;
+}
+//output
+
+document.write( "il calcolo dell ipotenusa è:" + ipotenusa() + " cm " );
+document.write( "e il perimetro del triangolo equilatero è:" + perimetro() + " cm" );
+</script>
+
+</body>
+</html>
