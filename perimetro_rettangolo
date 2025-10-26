@@ -20,3 +20,8 @@ return calcolo_perimetro;
 }
 //output
 document.write( "il perimetro del rettangolo è:" + perimetro_rettangolo() + " cm" );
+
+</script>
+
+</body>
+</html>
