@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcolo del perimetro del rettangolo</title>
+</head>
+<body>
+    <h1>il perimetro del rettangolo di cui hai inserito i dati di misura</h1>
+<script>
+//dichiarazione di una variabile e assegnazione del valore
+var latoA = Number(prompt("inserici la lunghezza del lato A del rettangolo",""));
+var latoB = Number(prompt("inserici la lunghezza del lato B del rettangolo",""));
+//la variabile lato restituisce un testo(stringa) ma usando
+// la funzione
+function perimetro_rettangolo(){
+var calcolo_perimetro = latoA + latoA + latoB + latoB;
+//la funzione retuituera lato A + lato A + lato B + lato B
+return calcolo_perimetro;
+}
+//output
+document.write( "il perimetro del rettangolo è:" + perimetro_rettangolo() + " cm" );
+
+</script>
+
+</body>
+</html>
