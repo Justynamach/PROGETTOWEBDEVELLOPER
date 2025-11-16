@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcolo del perimetro e dell area del pentagono equilatero </title>
+</head>
+<body>
+    <h1>il perometro e area del pentagono equilatero  di cui hai inserito i dati di misura</h1>
+
+ <HR>
+ <p id="A"></p> 
+ <p id="B"></p> 
+ <p id="TPO"></p> 
+
+
+<script>
+//dichiarazione di una variabile e assegnazione del valore
+var lato;
+lato = Number(prompt("inserici la lunghezza del lato del pentagono equilatero",""));
+
+//la variabile calcola la perimetro
+
+var perimetro = lato * 5;
+
+//la vaiabile calcola l area
+var area = (Math.sqrt(5 * (5 + 2 * Math.sqrt(5))) * lato * lato) / 4;
+//stampa del perimetro e dell area prendendo id A e B dopo uguale
+document.getElementById("A").innerHTML = "il perimetro del pentagono equilatero  è: " + perimetro.toFixed(2) + " cm" ;
+document.getElementById("B").innerHTML = "l area del pentagono equilatero è: " + area.toFixed(2) + " cm" ;
+
+//stampa la tipologia il perimetro e l area del pentagono equilatero
+
+document.getElementById("TPO").innerHTML = typeof(lato) + " "  + typeof(perimetro) + " " + typeof(area) ;
+
+
+</script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcolo della circonferenza e area del cerchio </title>
+</head>
+<body>
+    <h1>la circonferenza e area del cerchio  di cui hai inserito i dati di misura</h1>
+
+ <HR>
+ <p id="A"></p> 
+ <p id="B"></p> 
+ <p id="TPO"></p> 
+
+
+<script>
+//dichiarazione di una variabile e assegnazione del valore
+var raggio;
+raggio = Number(prompt("inserici la lunghezza del raggio del cerchio",""));
+
+//la variabile calcola la circonferezna
+
+var circonferenza = 2 * Math.PI * raggio;
+
+//la vaiabile calcola l area
+var area = Math.PI * (raggio * raggio);
+//stampa del perimetro e dell area prendendo id A e B dopo uguale
+document.getElementById("A").innerHTML = "la circonferenza del cerchio  è: " + circonferenza.toFixed(2) + " cm" ;
+document.getElementById("B").innerHTML = "l area del cerchio  è: " + area.toFixed(2) + " cm" ;
+
+//stampa la tipologia la circonferenza e l area del cerchio
+
+document.getElementById("TPO").innerHTML = typeof(raggio) + " "  + typeof(circonferenza) + " " + typeof(area) ;
+
+
+</script>
+
+</body>
+</html>
+
+

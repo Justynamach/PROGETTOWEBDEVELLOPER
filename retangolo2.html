@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcolo del perimetro del rettangolo </title>
+</head>
+<body>
+    <h1>il perimetro del rettangolo di cui hai inserito i dati di misura</h1>
+
+ <HR>
+ <p id="A"></p> 
+ <p id="B"></p> 
+ <p id="TPO"></p> 
+
+
+<script>
+//dichiarazione di una variabile e assegnazione del valore
+var base = Number(prompt("inserici la lunghezza della base del rettangolo  in cm",""));
+var altezza = Number(prompt("inserici la lunghezza della altezza del rettangolo  in cm",""));
+//la variabile calcola il perimetro
+
+var perimetro = (base * 2) + (altezza * 2);
+
+//la vaiabile calcola l area
+ var area = base * altezza;
+
+//stampa del perimetro e dell area prendendo id A e B dopo uguale
+document.getElementById("A").innerHTML = "il perimetro del rettangolo  è: " + perimetro.toFixed(2) + " cm" ;
+document.getElementById("B").innerHTML = "l area del rettangolo  è: " + area.toFixed(2) + " cm" ;
+
+//stampa la tipologia del perimetro e l area del rettangolo 
+
+document.getElementById("TPO").innerHTML = typeof(base) + " " + typeof(altezza) + " " + typeof(perimetro) + " " + typeof(area) ;
+
+
+</script>
+
+</body>
+</html>
+
+

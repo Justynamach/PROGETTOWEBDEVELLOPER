@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcolo del perimetro del triangolo equilatero</title>
+</head>
+<body>
+    <h1>il perimetro del triangolo equilatero di cui hai inserito i dati di misura</h1>
+
+ <HR>
+ <p id="A"></p> 
+ <p id="B"></p> 
+ <p id="TPO"></p> 
+
+
+<script>
+//dichiarazione di una variabile e assegnazione del valore
+var lato = Number(prompt("inserici la lunghezza del lato del triangolo equilatero in cm",""));
+//la variabile calcola il perimetro
+
+var perimetro = lato * 3;
+
+//la vaiabile calcola l area
+ var area = (Math.sqrt(3)/4)*(lato * lato);
+
+//stampa del perimetro e dell area prendendo id A e B dopo uguale
+document.getElementById("A").innerHTML = "il perimetro del triangolo equilatero è: " + perimetro.toFixed(2) + " cm" ;
+document.getElementById("B").innerHTML = "l area del triangolo equilatero è: " + area.toFixed(2) + " cm" ;
+
+//stampa la tipologia del perimetro e l area del triangolo equilatero
+
+document.getElementById("TPO").innerHTML = typeof(lato) + " " + typeof(perimetro) + " " + typeof(area) ;
+
+
+</script>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcolo del perimetro del triangolo equilatero</title>
+</head>
+<body>
+    <h1>il perimetro del triangolo equilatero di cui hai inserito i dati di misura</h1>
+
+ <HR>
+ <p id="A"></p> 
+ <p id="B"></p> 
+ <p id="TPO"></p> 
+
+
+<script>
+//dichiarazione di una variabile e assegnazione del valore
+var lato = Number(prompt("inserici la lunghezza del lato del triangolo equilatero in cm",""));
+//la variabile calcola il perimetro
+
+var perimetro = lato * 3;
+
+//la vaiabile calcola l area
+ var area = (Math.sqrt(3)/4)*(lato * lato);
+
+//stampa del perimetro e dell area prendendo id A e B dopo uguale
+document.getElementById("A").innerHTML = "il perimetro del triangolo equilatero è: " + perimetro.toFixed(2) + " cm" ;
+document.getElementById("B").innerHTML = "l area del triangolo equilatero è: " + area.toFixed(2) + " cm" ;
+
+//stampa la tipologia del perimetro e l area del triangolo equilatero
+
+document.getElementById("TPO").innerHTML = typeof(lato) + " " + typeof(perimetro) + " " + typeof(area) ;
+
+
+</script>
+
+</body>
+</html>
